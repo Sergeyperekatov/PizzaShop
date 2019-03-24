@@ -16,8 +16,8 @@ get '/' do
 		erb :index		
 end
 
-get '/menu/:id' do
-	@product = Product.find(params[:id])
+get '/menu' do
+	
 	
 	erb :menu			
 end
