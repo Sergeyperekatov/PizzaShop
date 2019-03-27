@@ -6,10 +6,10 @@
 
 	<% @products.each do |product| %>
 
-<br>
+
  	<div class="col-md-4">
 
- 		<p> <img src="<%= product.path_to_image %>" height='75%' width='75%'> </p> <br> 
+ 		<p> <img src="<%= product.path_to_image %>" height='250px' width='300px'> </p>
  		<h2><%= product.title %></h2>
  		<ul>
  		 <li type="none">Описание: <%= product.description %></li>
@@ -19,9 +19,9 @@
 		 <li type="none">Цена дня? <%= product.is_best_offer %></li>
  		</ul>
  		<p><strong>Цена: <%= product.price %>руб.</strong></p>
-  		<button class ="btn btn-primary" onclick="something()">Add to basket</button>
+  		<button class = "btn btn-success btn-sm" onclick= "add(<%= product.id %>)">Add to basket</button>
 		
- 	</div><br>
+ 	</div>
 <% end %>
 
 </div>
