@@ -21,3 +21,7 @@ get '/menu' do
 	
 	erb :menu			
 end
+
+post '/cart' do
+	erb "Hello"
+end
