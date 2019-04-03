@@ -34,7 +34,9 @@
 </div>
 
 <form action="/place_order" method="POST" role="form">
-  <input type="hidden" name="order[orders_input]" value="<%= @orders_input %>" />
+ 
+  <input type="hidden" name="order[scope]" value="<%= @orders_input %>"/>
+  
   <div class="form-group">
     <label>Ваше имя</label>
     <input name="order[name]" type="text" class="form-control" placeholder="Ваше имя">
